@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="city" placeholder="Enter City">
+    <button type="button">Search</button>
+</form>
+
+<h2>{{temp}}</h2>
+<h3>{{city}}</h3>
+<p>{{desc}}</p>
+<p>
+    <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="imgages" width="100px">
+</p>
+<p>{{day}}</p>
